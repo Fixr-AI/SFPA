@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { counties, townships } from '@/data/locations';
+import { counties, cities } from '@/data/locations';
 import { generateMetadata as genMeta } from '@/lib/metadata';
 
 export const metadata = genMeta({
@@ -67,15 +67,15 @@ export default function LocationsPage() {
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {townships.map((township) => (
+            {cities.map((city) => (
               <Link
-                key={township.slug}
-                href={`/city/${township.slug}`}
+                key={city.slug}
+                href={`/city/${city.slug}`}
                 className="bg-white hover:bg-primary hover:text-white transition-all p-4 rounded-lg text-center font-semibold border-2 border-gray-200 hover:border-primary"
               >
-                <div className="text-lg mb-1">{township.name}</div>
+                <div className="text-lg mb-1">{city.name}</div>
                 <div className="text-sm text-gray-500 hover:text-white">
-                  {township.county}
+                  {city.county}
                 </div>
               </Link>
             ))}
@@ -141,10 +141,10 @@ export default function LocationsPage() {
             Click on your location to get local foreclosure information and a cash offer for your home. Or call us now for immediate assistance.
           </p>
           <a
-            href="tel:+18568791492"
+            href="tel:+12155551234"
             className="inline-block bg-white text-primary hover:bg-gray-100 font-bold py-4 px-8 rounded-lg transition-colors shadow-lg"
           >
-            Call Now: (856) 879-1492
+            Call Now: (215) 555-1234
           </a>
         </div>
       </section>

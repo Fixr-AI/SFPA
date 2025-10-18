@@ -1,60 +1,59 @@
-# Stop Foreclosures NJ Website
+# Stop Foreclosures PA Website
 
-A high-performance Next.js website designed to rank highly on search engines and LLMs for New Jersey foreclosure prevention and cash home buying services.
+A high-performance Next.js website designed to rank highly on search engines and LLMs for Pennsylvania foreclosure prevention and cash home buying services.
 
 ## Features
 
 - **SEO Optimized**: Comprehensive meta tags, Schema.org markup, and semantic HTML
-- **Geographic Targeting**: Individual pages for 10 NJ counties and 20+ townships
+- **Geographic Targeting**: Individual pages for 10 PA counties and 18 cities
 - **Fast Performance**: Static generation with Next.js 15 for optimal load times
 - **Mobile-First Design**: Responsive Tailwind CSS design
 - **Lead Generation**: Multiple conversion-optimized forms throughout the site
-- **Local Content**: County/township-specific landmarks, statistics, and keywords
+- **Local Content**: County/city-specific landmarks, statistics, and keywords
 
 ## Site Structure
 
 ```
 /                          - Homepage with hero and lead capture
 /county/[slug]             - 10 county-specific landing pages
-/city/[slug]               - 20+ township-specific landing pages
+/city/[slug]               - 18 city-specific landing pages
 /locations                 - All service areas index
-/how-it-works              - Process explanation (to be added)
-/resources                 - Foreclosure resources (to be added)
-/about                     - About the company (to be added)
-/faq                       - Frequently asked questions (to be added)
+/how-it-works              - Process explanation
+/resources                 - Foreclosure resources
+/about                     - About the company
 ```
 
 ## Geographic Coverage
 
 ### Counties (10 pages):
-1. Cumberland County
-2. Salem County
-3. Sussex County
-4. Monmouth County
-5. Camden County
-6. Burlington County
-7. Atlantic County
-8. Gloucester County
-9. Ocean County
-10. Cape May County
+1. Philadelphia County
+2. Allegheny County
+3. Montgomery County
+4. Bucks County
+5. Delaware County
+6. Chester County
+7. Lancaster County
+8. York County
+9. Berks County
+10. Lehigh County
 
-### Townships (20+ pages):
-Including Vineland, Millville, Bridgeton, Cherry Hill, Camden, Atlantic City, Toms River, Lakewood, Long Branch, and many more.
+### Cities (18 pages):
+Including Philadelphia, Pittsburgh, Norristown, King of Prussia, Lansdale, Bensalem, Bristol, Levittown, Upper Darby, Chester, West Chester, Lancaster, York, Reading, Allentown, and more.
 
 ## SEO Strategy
 
 ### Target Keywords
 
 **Primary Keywords**:
-- stop foreclosure in New Jersey
-- sell house fast to avoid foreclosure NJ
-- cash home buyers foreclosure NJ
+- stop foreclosure in Pennsylvania
+- sell house fast to avoid foreclosure PA
+- cash home buyers foreclosure PA
 - we buy houses facing foreclosure
 
 **Geographic Keywords** (per location):
-- stop foreclosure [County Name] NJ
+- stop foreclosure [County Name] PA
 - sell house fast [City Name]
-- we buy houses [City Name] NJ
+- we buy houses [City Name] PA
 - cash buyers [County Name]
 
 ### Schema Markup
@@ -68,7 +67,7 @@ Including Vineland, Millville, Bridgeton, Cherry Hill, Camden, Atlantic City, To
 
 - Comprehensive, factual content
 - Clear answer formatting for common questions
-- Citation of official NJ resources
+- Citation of official PA resources
 - Structured data for easy parsing
 - Unbiased presentation of all homeowner options
 
@@ -83,8 +82,8 @@ Including Vineland, Millville, Bridgeton, Cherry Hill, Camden, Atlantic City, To
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Fixr-AI/SFNJ.git
-   cd SFNJ
+   git clone https://github.com/Fixr-AI/SFPA.git
+   cd SFPA
    ```
 
 2. Install dependencies:
@@ -93,7 +92,7 @@ Including Vineland, Millville, Bridgeton, Cherry Hill, Camden, Atlantic City, To
    ```
 
 3. Add the logo:
-   - Place the Stop Foreclosures NJ logo as `public/images/logo.png`
+   - Place the Stop Foreclosures PA logo as `public/images/logo.png`
    - Create a white version as `public/images/logo-white.png` for the footer
 
 4. Run the development server:
@@ -145,17 +144,17 @@ No environment variables required for the current setup. If you add form submiss
    - name, slug, population, medianHomePrice, landmarks, keywords
 3. Rebuild and deploy
 
-### Add a New Township
+### Add a New City
 
 1. Edit `data/locations.ts`
-2. Add township object to `townships` array
+2. Add city object to `cities` array
 3. Link to parent county
 4. Include landmarks and keywords
 5. Rebuild and deploy
 
 ### Customize Phone Number
 
-Find and replace all instances of `(855) 555-1234` and `+18555551234` with your actual phone number.
+Find and replace all instances of `(215) 555-1234` and `+12155551234` with your actual phone number.
 
 Files to update:
 - `components/Header.tsx`
@@ -229,10 +228,10 @@ Files to update:
 ## File Structure
 
 ```
-SFNJ/
+SFPA/
 ├── app/
 │   ├── county/[slug]/page.tsx    # County landing pages
-│   ├── city/[slug]/page.tsx      # Township landing pages
+│   ├── city/[slug]/page.tsx      # City landing pages
 │   ├── locations/page.tsx        # Service areas index
 │   ├── layout.tsx                # Root layout
 │   ├── page.tsx                  # Homepage
@@ -242,7 +241,7 @@ SFNJ/
 │   ├── Footer.tsx                # Site footer
 │   └── LeadForm.tsx              # Lead capture form
 ├── data/
-│   └── locations.ts              # County and township data
+│   └── locations.ts              # County and city data
 ├── lib/
 │   └── metadata.ts               # SEO metadata helpers
 ├── public/
@@ -262,4 +261,4 @@ For questions or issues, refer to:
 
 ## License
 
-Proprietary - Stop Foreclosures NJ © 2025
+Proprietary - Stop Foreclosures PA © 2025

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { counties, townships } from '@/data/locations';
+import { counties, cities } from '@/data/locations';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -25,8 +25,8 @@ export default function Footer() {
             <div className="space-y-2">
               <p className="text-gray-300">
                 <span className="font-semibold">Call 24/7:</span>{' '}
-                <a href="tel:+18568791492" className="hover:text-primary">
-                  (856) 879-1492
+                <a href="tel:+12155551234" className="hover:text-primary">
+                  (215) 555-1234
                 </a>
               </p>
               <p className="text-gray-300">Licensed & Insured in PA</p>
@@ -91,13 +91,13 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Popular Areas</h3>
             <ul className="space-y-2">
-              {townships.slice(0, 8).map((township) => (
-                <li key={township.slug}>
+              {cities.slice(0, 8).map((city) => (
+                <li key={city.slug}>
                   <Link
-                    href={`/city/${township.slug}`}
+                    href={`/city/${city.slug}`}
                     className="text-gray-300 hover:text-primary text-sm"
                   >
-                    {township.name}
+                    {city.name}
                   </Link>
                 </li>
               ))}
