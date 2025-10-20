@@ -3,9 +3,9 @@ import LeadForm from '@/components/LeadForm';
 import { generateMetadata as genMeta } from '@/lib/metadata';
 
 export const metadata = genMeta({
-  title: 'NJ Foreclosure Resources | Free Help & Information | Stop Foreclosures PA',
+  title: 'PA Foreclosure Resources | Free Help & Information | Stop Foreclosures PA',
   description: 'Free Pennsylvania foreclosure resources, timelines, laws, and options. Learn about PA foreclosure process, government assistance programs, and how to protect your rights.',
-  keywords: 'NJ foreclosure laws, Pennsylvania foreclosure timeline, foreclosure help PA, stop foreclosure assistance',
+  keywords: 'PA foreclosure laws, Pennsylvania foreclosure timeline, foreclosure help PA, stop foreclosure assistance',
   canonical: 'https://stopforeclosurespa.com/resources',
 });
 
@@ -133,8 +133,8 @@ export default function ResourcesPage() {
               <p className="mb-4">
                 The earlier you act, the more options you have. We can help at ANY stage of the foreclosure process, even days before the sheriff sale.
               </p>
-              <a href="tel:+18568791492" className="inline-block bg-white text-primary hover:bg-gray-100 font-bold py-3 px-6 rounded-lg transition-colors">
-                Call Now: (856) 879-1492
+              <a href="tel:+12155551234" className="inline-block bg-white text-primary hover:bg-gray-100 font-bold py-3 px-6 rounded-lg transition-colors">
+                Call Now: (215) 555-1234
               </a>
             </div>
           </div>
@@ -201,52 +201,52 @@ export default function ResourcesPage() {
 
           <div className="max-w-4xl mx-auto space-y-6">
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="heading-sm mb-3">NJ HomeKeeper Program</h3>
+              <h3 className="heading-sm mb-3">PA Homeowner Assistance Fund (PAHAF)</h3>
               <p className="text-gray-700 mb-3">
-                Provides up to $35,000 in assistance for eligible homeowners to catch up on mortgage payments, property taxes, and other housing expenses.
+                Provides financial assistance to eligible Pennsylvania homeowners for mortgage payments, property taxes, utilities, and other housing-related expenses.
               </p>
               <p className="text-sm text-gray-600">
-                Website: <a href="https://njhousing.gov/homekeeper" className="text-primary hover:underline" target="_blank" rel="noopener">njhousing.gov/homekeeper</a>
+                Website: <a href="https://pahaf.org" className="text-primary hover:underline" target="_blank" rel="noopener">pahaf.org</a> or call 1-888-987-2423
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="heading-sm mb-3">HUD-Approved Housing Counseling</h3>
+              <h3 className="heading-sm mb-3">HUD-Approved Housing Counseling in PA</h3>
               <p className="text-gray-700 mb-3">
                 Free foreclosure prevention counseling from HUD-certified counselors. They can help you understand your options and negotiate with your lender.
               </p>
               <p className="text-sm text-gray-600">
-                Hotline: 1-800-569-4287 or visit <a href="https://www.hud.gov" className="text-primary hover:underline" target="_blank" rel="noopener">HUD.gov</a>
+                Hotline: 1-800-569-4287 or visit <a href="https://www.hud.gov/findacounselor" className="text-primary hover:underline" target="_blank" rel="noopener">HUD.gov/findacounselor</a>
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="heading-sm mb-3">NJ Foreclosure Mediation Program</h3>
+              <h3 className="heading-sm mb-3">PA Foreclosure Diversion Program</h3>
               <p className="text-gray-700 mb-3">
-                Court-ordered mediation gives you a chance to sit down with your lender and a neutral mediator to explore alternatives to foreclosure.
+                Court-ordered mediation program that brings you and your lender together with a neutral mediator to explore alternatives to foreclosure.
               </p>
               <p className="text-sm text-gray-600">
-                Contact your county court or visit <a href="https://www.njcourts.gov" className="text-primary hover:underline" target="_blank" rel="noopener">njcourts.gov</a>
+                Contact your county court or visit <a href="https://www.pacourts.us/judicial-administration/court-programs/foreclosure-diversion-program" className="text-primary hover:underline" target="_blank" rel="noopener">pacourts.us</a>
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="heading-sm mb-3">FEMA Disaster Assistance</h3>
+              <h3 className="heading-sm mb-3">Pennsylvania Housing Finance Agency (PHFA)</h3>
               <p className="text-gray-700 mb-3">
-                If your financial hardship is due to a federally declared disaster (flood, hurricane, etc.), you may qualify for FEMA assistance to help with mortgage payments.
+                Offers counseling and assistance programs for homeowners struggling with mortgage payments, including loan modification resources.
               </p>
               <p className="text-sm text-gray-600">
-                Website: <a href="https://www.fema.gov" className="text-primary hover:underline" target="_blank" rel="noopener">FEMA.gov</a> or call 1-800-621-3362
+                Website: <a href="https://www.phfa.org" className="text-primary hover:underline" target="_blank" rel="noopener">phfa.org</a> or call 1-855-827-3466
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="heading-sm mb-3">Legal Services of Pennsylvania</h3>
+              <h3 className="heading-sm mb-3">Legal Aid Organizations in PA</h3>
               <p className="text-gray-700 mb-3">
                 Free legal help for low-income homeowners facing foreclosure. Attorneys can represent you in court and negotiate with lenders.
               </p>
               <p className="text-sm text-gray-600">
-                Hotline: 1-888-576-5529 or visit <a href="https://www.lsnj.org" className="text-primary hover:underline" target="_blank" rel="noopener">LSNJ.org</a>
+                Website: <a href="https://www.palegalaid.net" className="text-primary hover:underline" target="_blank" rel="noopener">palegalaid.net</a> or call your local legal aid office
               </p>
             </div>
           </div>
@@ -405,10 +405,10 @@ export default function ResourcesPage() {
               </div>
 
               <a
-                href="tel:+18568791492"
+                href="tel:+12155551234"
                 className="inline-block bg-white text-primary hover:bg-gray-100 font-bold py-4 px-8 rounded-lg transition-colors shadow-lg"
               >
-                Call Now: (856) 879-1492
+                Call Now: (215) 555-1234
               </a>
             </div>
 
